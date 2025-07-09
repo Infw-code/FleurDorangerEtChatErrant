@@ -41,7 +41,7 @@
                             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png"
                             alt="Logo" />
                         <img
-                            class="logo-mobile"
+                            class="LogoBurger"
                             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-mobile.png"
                             alt="Logo Mobile" />
                     </li>
@@ -50,10 +50,14 @@
                     <li class="site-title"><a href="/">Fleurs d'oranger & chats errant</a></li>
                     <li><a href="#place">Lieu</a></li>
                     <li><a href="#studio">Studio Koukaki</a></li>
+                    <li><img class="ChatViolet" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Kawaneko-150x150.png" alt="chat violet" /></li>
+                    <li><img class="menu-icon RandomFlowerBurger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/flower.png" alt="RandomFlower" /></li>
                     <li><img class="menu-icon SunFlowerBurger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Sunflower.png" alt="Fleur Soleil" /></li>
-                    <li><img class="menu-icon FleurBurger " src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/random_flower.png" alt="Fleur" /></li>
+                    <li><img class="menu-icon FleurBurger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/random_flower.png" alt="Fleur" /></li>
                     <li><img class="menu-icon OrchidBurger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/orchid.png" alt="Orchid" /></li>
                     <li><img class="HibiscusBurger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Hibiscus.png" alt="Hibiscus" /></li>
+                    <li><img class="ChatNoir" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Jaakuna-1-150x150.png" alt="chat noir" /></li>
+                    <li><img class="ChatOrange" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Orenjiiro-1-150x150.png" alt="chat orange" /></li>
                 </ul>
             </nav>
         </header><!-- #masthead -->

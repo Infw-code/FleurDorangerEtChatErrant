@@ -5,7 +5,7 @@ get_header();
 
 <main id="primary" class="site-main">
     <section class="banner">
-        <video autoplay muted loop playsinline class="video-banner">
+        <video class="video-banner" autoplay muted loop playsinline>
             <source src="<?php echo wp_upload_dir()['baseurl']; ?>/2025/06/StudioKoukaki-videoheadersansson1-Copie.mp4" type="video/mp4">
         </video>
         <div class="logoSlideUp">
@@ -66,7 +66,6 @@ get_header();
             <p>Avec une créativité et une capacité d’innovation mondialement reconnues, une expertise éditoriale et commerciale à la pointe de son industrie, le Studio Koukaki se positionne comme un acteur incontournable dans un marché en forte croissance. Koukaki construit chaque année de véritables succès et capitalise sur de puissantes marques historiques. Cette année, il vous présente “Fleurs d’oranger et chats errants”.</p>
         </div>
     </section>
-    <?php get_template_part('nomination'); ?>
 </main><!-- #main -->
 
 <?php

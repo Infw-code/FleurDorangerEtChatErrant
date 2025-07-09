@@ -10,6 +10,7 @@
  */
 
 ?>
+<?php get_template_part('nomination'); ?>
 	<footer id="colophon" class="site-footer">
         <ul>
             <li><a href="#">Mentions Légales</a></li>

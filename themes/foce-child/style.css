@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*
 Theme Name: foce-child
 Template: foce
@@ -84,6 +85,7 @@ table {
 	bottom: -28.5em;
 	z-index: -1;
 }
+
 /* Links
 --------------------------------------------- */
 a {
@@ -108,6 +110,7 @@ a:hover,
 a:active {
 	outline: 0;
 }
+
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
@@ -136,6 +139,7 @@ body.menu-open {
 .texteInverse {
 	animation: slideDown 1.5s ease-out forwards;
 }
+
 #characters {
 	display: flex;
 	flex-direction: column;
@@ -407,41 +411,30 @@ figcaption {
 .nomination {
 	display: flex;
 	align-items: flex-start;
+	margin-top: 200px;
 }
 
 .orange-banner {
 	background-image: url("./assets/images/orange_characters_bg.png");
-	background-repeat: no-repeat;
-	background-size: 80% 100%;
-	/* ou 'cover' selon ta préférence, mais 'contain' garde les proportions */
+	background-size: 100% 110%;
 	background-position: center;
-
-	max-width: 800px;
-	width: 60%;
-	margin: 0 auto;
-	padding: 60px 40px;
 	box-sizing: border-box;
-	transform: scaleX(-1);
-	/* ← retourne horizontalement le bloc */
+	margin-left: 120px;
 }
 
 .orange-banner h3 {
-	font-size: 2em;
-	/* ajuste si besoin */
-	padding-left: 140px;
-	/* décale sans comprimer */
+	font-size: 1em;
+	padding-left: 100px;
 	line-height: 1.4;
 	text-align: left;
-	/* aligne le texte à gauche */
 	transform: scaleX(-1);
-	/* ← remet le texte à l’endroit */
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .texte {
 	margin-top: 200px;
 	margin-bottom: 200px;
-	font-size: 25px;
+	font-size: 30px;
 }
 
 .nomination img {
@@ -578,11 +571,14 @@ figcaption {
 #studio>div p {
 	width: 44.5%;
 }
-.oscarnomination{
-	width: 35%;
-	margin-top: 60px;
-	margin-left: 200px;
+
+.oscarnomination {
+	position: relative;
+	width: 18%;
+	margin-right: 250px;
+	margin-top: 50px;
 }
+
 /* RESPONSIVE */
 @media all and (max-width: 1192px) {
 	h3 {
@@ -607,12 +603,6 @@ figcaption {
 	h2 {
 		font-size: 3rem;
 	}
-
-	.video-banner {
-		width: 100%;
-		margin-top: -440px;
-	}
-
 	.logo-banner {
 		margin-top: -60px;
 		margin-left: -20px;
@@ -629,6 +619,7 @@ figcaption {
 		color: white;
 	}
 }
+
 @media all and (max-width: 920px) {
 	.site-footer::before {
 		content: '';
@@ -640,6 +631,7 @@ figcaption {
 		content: '';
 	}
 }
+
 @media (max-width: 768px) {
 	.main-navigation .menu-icon {
 		animation: rotation 5s linear infinite;
@@ -743,6 +735,7 @@ figcaption {
 		transform: rotate(-45deg) translate(5px, -5px);
 	}
 }
+
 @media all and (max-width: 1192px) {
 	.story__article::before {
 		left: 40%;
@@ -825,6 +818,7 @@ figcaption {
 		content: '';
 	}
 }
+
 @media screen and (min-width: 700px) {
 	.menu-toggle {
 		display: none;
@@ -844,10 +838,17 @@ figcaption {
 		display: block;
 	}
 }
+
 .main-navigation ul {
 	margin-left: 200px;
 }
+
 @media (max-width: 768px) {
+	.video-banner{
+		height: auto !important;
+		width: 100% !important;
+		margin-top: -320px;
+	}
 	.main-navigation ul {
 		display: none;
 		flex-direction: column;
@@ -855,50 +856,54 @@ figcaption {
 		background: white;
 		position: absolute;
 		top: 60px;
-		/* sous le header */
 		left: 0;
 		right: 0;
 		padding: 20px 0;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	}
-    .nomination {
-    flex-direction: column;
-    align-items: center;
-	display: flex;
-  }
-  
-  .orange-banner {
-    width: 100%;
-    max-width: none;
-    padding: 30px 20px;
-    background-size: cover;
-    background-position: center top;
-    transform: none;
-  }
 
-  .orange-banner h3 {
-    font-size: 1.5em;
-    padding-left: 0;
-    text-align: center;
-    margin-top: 20px;
-	margin-left: 25px;
-    transform: none;
-    line-height: 1;
-  }
+	.nomination {
+		flex-direction: column;
+		align-items: center;
+		margin-top: -20px;
+	}
 
-  .texte {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 16px;
-    line-height: 1.8;
-    text-align: center;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+	.orange-banner {
+		width: 100%;
+		transform: none;
+		margin-right: 120px;
+	}
+
+	.orange-banner h3 {
+		font-size: 2.5em;
+		text-align: center;
+		margin-left: -70px;
+		transform: none;
+		line-height: 1;
+	}
+
+	.texte {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		font-size: 20px;
+		line-height: 1.8;
+		text-align: center;
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.oscarnomination {
+		position: absolute;
+		top: 200px;
+		left: 140px;
+		width: 45%;
+	}
+
 	.main-navigation ul.active {
 		display: flex;
 	}
+
 	.main-navigation ul li a {
 		font-weight: 450;
 		font-size: 2.5rem !important;
@@ -910,19 +915,21 @@ figcaption {
 		text-shadow: 2px 2px 6px #FF5C00;
 	}
 
-	.SunFlowerBurger {
-		position: absolute;
-		bottom: 400px;
-		left: 220px;
-		width: 150px !important;
-		height: auto !important;
-		max-width: none !important;
-		max-height: none !important;
+	/*CSS MENU BURGER*/
+	.main-navigation .logo-desktop {
+		display: none;
 	}
 
-	.logo-desktop {
-		position: absolute;
+	.LogoBurger {
 		width: 154px !important;
+		height: auto !important;
+	}
+
+	.SunFlowerBurger {
+		position: absolute;
+		bottom: 420px;
+		right: 20px;
+		width: 120px !important;
 		height: auto !important;
 		max-width: none !important;
 		max-height: none !important;
@@ -930,8 +937,8 @@ figcaption {
 
 	.FleurBurger {
 		position: absolute;
-		bottom: 310px;
-		right: 220px;
+		bottom: 320px;
+		right: 5px;
 		width: 40px !important;
 		height: auto !important;
 		max-width: none !important;
@@ -940,9 +947,9 @@ figcaption {
 
 	.OrchidBurger {
 		position: absolute;
-		bottom: 30px;
-		right: 260px;
-		width: 150px !important;
+		bottom: 520px;
+		left: -20px;
+		width: 100px !important;
 		height: auto !important;
 		max-width: none !important;
 		max-height: none !important;
@@ -950,8 +957,8 @@ figcaption {
 
 	.HibiscusBurger {
 		position: absolute;
-		bottom: 180px;
-		left: 250px;
+		top: -100px;
+		right: -140px;
 		width: 350px !important;
 		height: auto !important;
 		max-width: none !important;
@@ -960,48 +967,96 @@ figcaption {
 
 	.RandomFlowerBurger {
 		position: absolute;
-		bottom: 970px;
-		left: 270px;
+		bottom: 170px;
+		left: 50px;
 		width: 50px !important;
 		height: auto !important;
 		max-width: none !important;
 		max-height: none !important;
-		animation: rotation 5s linear infinite;
 	}
-	.cloud1 {
-	left: 160%;
-	top: 10%;
-	height: 100px;
-	width: 300px;
-}
 
-.cloud2 {
-	left: 200%;
-	top: 30%;
-}
-.video-banner{
-	position: fixed;
-	height: 300px;
-	width: auto;
-	margin-bottom: 70px;
-}
-.logo-banner{
-	width: 200px;
-	margin-left: 35px;
-	margin-top: -20px;
-}
-.story{
-	margin-bottom: 100px;
-}
-.menu-toggle.active{
-  animation: fadeIn 5s ease forwards;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+	.ChatViolet {
+		animation: float 5s ease-in-out infinite;
+	}
+
+	.ChatNoir {
+		animation: float 5s ease-in-out infinite reverse;
+	}
+
+	.ChatOrange {
+		animation: float 5s ease-in-out infinite alternate-reverse;
+	}
+
+	.ChatNoir {
+		position: absolute;
+		bottom: 350px;
+		right: 100px;
+		width: 75px !important;
+		height: auto !important;
+		max-width: none !important;
+		max-height: none !important;
+	}
+
+	.ChatOrange {
+		position: absolute;
+		bottom: 250px;
+		left: 20px;
+		width: 75px !important;
+		height: auto !important;
+		max-width: none !important;
+		max-height: none !important;
+	}
+
+	.ChatViolet {
+		position: absolute;
+		bottom: 280px;
+		left: 80px;
+		width: 75px !important;
+		height: auto !important;
+		max-width: none !important;
+		max-height: none !important;
+	}
+
+	.cloud1 {
+		left: 100%;
+		top: 10%;
+		height: 100px;
+		width: 300px;
+	}
+
+	.cloud2 {
+		left: 130%;
+		top: 30%;
+	}
+
+	.video-banner {
+		position: fixed;
+		height: 300px;
+		width: auto;
+		margin-bottom: 70px;
+	}
+
+	.logo-banner {
+		width: 400px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	.story {
+		margin-bottom: 100px;
+	}
+
+	.menu-toggle.active {
+		animation: fadeIn 5s ease forwards;
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
 }
