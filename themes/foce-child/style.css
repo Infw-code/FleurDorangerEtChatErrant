@@ -603,6 +603,7 @@ figcaption {
 	h2 {
 		font-size: 3rem;
 	}
+
 	.logo-banner {
 		margin-top: -60px;
 		margin-left: -20px;
@@ -843,12 +844,149 @@ figcaption {
 	margin-left: 200px;
 }
 
-@media (max-width: 768px) {
-	.video-banner{
-		height: auto !important;
-		width: 100% !important;
-		margin-top: -320px;
+/* Responsive Mobile */
+@media (max-width: 480px) {
+	.video-banner {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 300px;
+		object-fit: cover;
+		z-index: -1;
 	}
+
+	.logo-banner {
+		width: 250px !important;
+		margin-top: -30px !important;
+	}
+
+	.main-navigation ul {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		background: white;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		right: 0;
+		padding: 15px 0;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.main-navigation ul.active {
+		display: flex;
+	}
+
+	.main-navigation ul li a {
+		font-weight: 500;
+		font-size: 2rem !important;
+		text-align: center;
+		display: block;
+	}
+
+	.main-navigation ul li a:hover {
+		text-shadow: 1px 1px 4px #FF5C00;
+	}
+
+	.cloud1 {
+		left: 120% !important;
+		top: 10%;
+		height: 100px !important;
+		width: 200px;
+	}
+
+	.cloud2 {
+		left: 150% !important;
+		top: 30%;
+	}
+
+	.nomination {
+		flex-direction: column;
+		align-items: center;
+		margin-top: -10px;
+	}
+	.orange-banner {
+		width: 100% !important;
+		margin: 0 auto;
+		transform: none;
+	}
+	.orange-banner h3 {
+		font-size: 1.5rem !important;
+		text-align: center !important;
+		margin: 0;
+		line-height: 1;
+	}
+	.texte {
+		margin: 30px auto;
+		font-size: 16px !important;
+		line-height: 1;
+		text-align: center !important;
+		max-width: 95%;
+	}
+
+	.oscarnomination {
+		position: relative;
+		width: 80%;
+		margin-top: -1px;
+		margin-left: -30px;
+	}
+	/* Menu burger mobile */
+		.LogoBurger {
+		width: 154px !important;
+		height: auto !important;
+	}
+
+	.SunFlowerBurger {
+		position: absolute;
+		bottom: 420px;
+		right: 10px !important;
+		width: 120px !important;
+		height: auto !important;
+		max-width: none !important;
+		max-height: none !important;
+	}
+	.ChatNoir {
+		position: absolute;
+		bottom: 350px;
+		right: 80px !important;
+		width: 75px !important;
+		height: auto !important;
+		max-width: none !important;
+		max-height: none !important;
+	}
+
+	.ChatOrange {
+		position: absolute;
+		bottom: 250px;
+		left: 20px;
+		width: 75px !important;
+		height: auto !important;
+		max-width: none !important;
+		max-height: none !important;
+	}
+
+	.ChatViolet {
+		position: absolute;
+		bottom: 280px;
+		left: 40px !important;
+		width: 75px !important;
+		height: auto !important;
+		max-width: none !important;
+		max-height: none !important;
+	}
+}
+
+/* Responsive Tablette*/
+@media (max-width: 1024px) {
+	.video-banner {
+		position: absolute;
+		top: 180px;
+		width: 100% !important;
+		height: 70% !important;
+		object-fit: cover;
+	}
+
 	.main-navigation ul {
 		display: none;
 		flex-direction: column;
@@ -915,7 +1053,6 @@ figcaption {
 		text-shadow: 2px 2px 6px #FF5C00;
 	}
 
-	/*CSS MENU BURGER*/
 	.main-navigation .logo-desktop {
 		display: none;
 	}
@@ -980,11 +1117,11 @@ figcaption {
 	}
 
 	.ChatNoir {
-		animation: float 5s ease-in-out infinite reverse;
+		animation: float 4s ease-in-out infinite reverse;
 	}
 
 	.ChatOrange {
-		animation: float 5s ease-in-out infinite alternate-reverse;
+		animation: float 6s ease-in-out infinite alternate-reverse;
 	}
 
 	.ChatNoir {
