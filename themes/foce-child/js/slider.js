@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   new Swiper('.swiper', {
     loop: true,
     effect: "coverflow",
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 20,
     autoplay: {
       delay: 2500,
