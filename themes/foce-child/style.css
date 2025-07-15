@@ -407,13 +407,16 @@ figcaption {
 	background-image: url("./assets/images/orange_characters_bg.png");
 	display: block;
 }
+
 .menu-toggle {
-  position: relative; 
+	position: relative;
 }
+
 body.menu-open .menu-toggle {
-  position: fixed;
-  right: 20px;  
+	position: fixed;
+	right: 20px;
 }
+
 .nomination {
 	display: flex;
 	align-items: flex-start;
@@ -435,14 +438,17 @@ body.menu-open .menu-toggle {
 	text-align: left;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.swiper-wrapper{
+
+.swiper-wrapper {
 	margin-left: -50px;
 }
+
 .texte {
 	margin-top: 200px;
 	margin-bottom: 200px;
 	font-size: 30px;
 }
+
 .story #characters div {
 	flex: 1;
 }
@@ -666,6 +672,7 @@ body.menu-open .menu-toggle {
 		display: none;
 		/* Masquer menu par défaut */
 	}
+
 	.main-navigation.toggled ul {
 		display: flex;
 		flex-direction: column;
@@ -685,6 +692,7 @@ body.menu-open .menu-toggle {
 		padding: 0;
 		list-style: none;
 	}
+
 	.main-navigation.toggled ul li {
 		margin: 20px 0;
 		width: 100%;
@@ -713,7 +721,7 @@ body.menu-open .menu-toggle {
 		justify-content: center;
 		height: 100%;
 	}
-	
+
 	.menu-toggle.active {
 		animation: fadeIn 5s ease forwards;
 		margin-right: 20px;
@@ -765,14 +773,14 @@ body.menu-open .menu-toggle {
 
 @media all and (max-width: 1040px) {
 	.story__article::before {
-		left: 33%;
+		left: 35%;
 		top: 15em;
 	}
 
 	.story__article::after {
 		content: url("./assets/images/Hibiscus.png");
 		position: absolute;
-		left: calc(33% + 414px);
+		left: calc(35% + 414px);
 		top: 9em;
 	}
 
@@ -858,198 +866,19 @@ body.menu-open .menu-toggle {
 	margin-left: 200px;
 }
 
-/* Responsive Mobile */
-@media (max-width: 480px) {
-	.video-banner {
-		position: fixed;
-		top: 180px;
-		left: 0;
-		width: 100vw;
-		height: 400px;
-		object-fit: cover;
-		z-index: -1;
-	}
-
-	.logo-banner {
-		width: 250px ;
-		margin-top: -30px ;
-	}
-
-	.main-navigation ul {
-		display: none;
-		flex-direction: column;
-		align-items: center;
-		background: white;
-		position: absolute;
-		top: 50px;
-		left: 0;
-		right: 0;
-		padding: 15px 0;
-		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-	}
-
-	.main-navigation ul.active {
-		display: flex;
-	}
-
-	.main-navigation ul li a {
-		font-weight: 500;
-		font-size: 2rem ;
-		text-align: center;
-		display: block;
-	}
-
-	.main-navigation ul li a:hover {
-		text-shadow: 1px 1px 4px #FF5C00;
-	}
-
-	.cloud1 {
-		left: 130%;
-		top: 10%;
-		height: 100px ;
-		width: 200px;
-	}
-
-	.cloud2 {
-		left: 150% ;
-		top: 30%;
-	}
-
-	.nomination {
-		flex-direction: column;
-		align-items: center;
-		margin-top: -10px;
-	}
-
-	.orange-banner {
-		width: 100% ;
-		margin: 0 auto;
-		transform: none;
-	}
-
-	.orange-banner h3 {
-		font-size: 1.5rem ;
-		text-align: center ;
-		margin: 0;
-		line-height: 1;
-	}
-
-	.texte {
-		margin: 30px auto;
-		font-size: 16px ;
-		text-align: center ;
-		max-width: 95%;
-	}
-
-	.oscarnomination {
-		position: relative;
-		width: 60%;
-		margin-top: -1px;
-		margin-left: 230px;
-	}
-
-	/* Menu burger mobile */
-	.LogoBurger {
-		width: 154px ;
-		height: auto ;
-	}
-
-	.SunFlowerBurger {
-		position: absolute;
-		bottom: 420px;
-		right: 10px ;
-		width: 120px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-	.FleurBurger {
-		position: absolute;
-		bottom: 320px;
-		right: 5px;
-		width: 40px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-
-	.OrchidBurger {
-		position: absolute;
-		bottom: 520px;
-		left: -20px;
-		width: 100px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-
-	.HibiscusBurger {
-		position: absolute;
-		top: -100px;
-		right: -140px;
-		width: 350px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-
-	.RandomFlowerBurger {
-		position: absolute;
-		bottom: 170px;
-		left: 50px;
-		width: 50px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-
-	.ChatNoir {
-		position: absolute;
-		bottom: 350px;
-		right: 80px ;
-		width: 75px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-
-	.ChatOrange {
-		position: absolute;
-		bottom: 250px;
-		left: 20px;
-		width: 75px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-
-	.ChatViolet {
-		position: absolute;
-		bottom: 280px;
-		left: 40px ;
-		width: 75px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-}
-
 /* Responsive Tablette*/
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1030px) {
 	.video-banner {
 		position: absolute;
 		top: 180px;
-		width: 100% ;
-		height: 600px;
+		width: 100%;
+		height: 550px;
 		object-fit: cover;
 	}
-    
+
 	.menu-toggle {
 		border: none;
-		cursor: pointer;
 		position: relative;
-		margin-left: auto;
-		margin-right: 20px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -1076,15 +905,14 @@ body.menu-open .menu-toggle {
 	}
 
 	.orange-banner {
-		width: 100%;
+		width: 70%;
 		transform: none;
 		margin-right: 120px;
+		margin-top: 100px;
 	}
 
 	.orange-banner h3 {
 		font-size: 2.5em;
-		text-align: center;
-		margin-left: -70px;
 		transform: none;
 		line-height: 1;
 	}
@@ -1092,18 +920,16 @@ body.menu-open .menu-toggle {
 	.texte {
 		margin-top: 40px;
 		margin-bottom: 40px;
-		font-size: 20px;
+		font-size: 24px;
 		line-height: 1.8;
-		text-align: center;
+		text-align: start;
 		max-width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	.oscarnomination {
-		position: absolute;
-		top: 220px;
-		left: 300px;
+		left: 120px;
 		width: 35%;
 	}
 
@@ -1113,101 +939,13 @@ body.menu-open .menu-toggle {
 
 	.main-navigation ul li a {
 		font-weight: 450;
-		font-size: 2.5rem ;
+		font-size: 2.5rem;
 		text-align: center;
 		display: block;
 	}
 
 	.main-navigation ul li a:hover {
 		text-shadow: 2px 2px 6px #FF5C00;
-	}
-
-	.main-navigation .logo-desktop {
-		display: none;
-	}
-
-	.LogoBurger {
-		width: 154px ;
-		height: auto ;
-	}
-
-	.SunFlowerBurger {
-		position: absolute;
-		bottom: 40px;
-		right: 1px ;
-		width: 120px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-	.FleurBurger {
-		position: absolute;
-		bottom: 320px;
-		right: 5px;
-		width: 40px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-
-	.OrchidBurger {
-		position: absolute;
-		bottom: 520px;
-		left: -20px;
-		width: 100px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-
-	.HibiscusBurger {
-		position: absolute;
-		top: -100px;
-		right: -140px;
-		width: 350px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-
-	.RandomFlowerBurger {
-		position: absolute;
-		bottom: 170px;
-		left: 50px;
-		width: 50px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-
-	.ChatNoir {
-		position: absolute;
-		bottom: 350px;
-		right: 80px ;
-		width: 75px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-
-	.ChatOrange {
-		position: absolute;
-		bottom: 250px;
-		left: 20px;
-		width: 75px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
-	}
-
-	.ChatViolet {
-		position: absolute;
-		bottom: 280px;
-		left: 40px ;
-		width: 75px ;
-		height: auto ;
-		max-width: none ;
-		max-height: none ;
 	}
 
 	.cloud1 {
@@ -1221,6 +959,7 @@ body.menu-open .menu-toggle {
 		left: 70%;
 		top: 30%;
 	}
+
 	.logo-banner {
 		width: 400px;
 		margin-top: 0px;
@@ -1228,6 +967,256 @@ body.menu-open .menu-toggle {
 	}
 
 	.story {
-		margin-bottom: 100px;
+	bottom: 100px;
+	}
+	/*menu Burger Tablette */
+	#site-navigation .site-title {
+		display: none;
+	}
+
+	#site-navigation li {
+		margin-top: 60px;
+	}
+
+	#site-navigation a {
+		font-size: 30px;
+	}
+
+	#site-navigation .LogoBurger {
+		width: 300px;
+		margin-left: 350px;
+		display: block;
+	}
+
+	#site-navigation .logo-desktop {
+		position: absolute;
+		display: none;
+	}
+
+	#site-navigation .SunFlowerBurger {
+		position: absolute;
+		display: block;
+		width: 200px;
+		bottom: 580px;
+		right: 50px;
+		animation: rotation 5s linear infinite;
+	}
+
+	#site-navigation .FleurBurger {
+		position: absolute;
+		display: block;
+		width: 70px;
+		bottom: 450px;
+		right: 50px;
+		animation: rotation 5s linear infinite;
+	}
+
+	#site-navigation .OrchidBurger {
+		position: absolute;
+		display: block;
+		width: 150px;
+		bottom: 750px;
+		left: 50px;
+		animation: rotation 5s linear infinite;
+	}
+
+	#site-navigation .HibiscusBurger {
+		position: absolute;
+		display: block;
+		width: 600px;
+		bottom: -350px;
+		left: 700px
+	}
+
+	#site-navigation .RandomFlowerBurger {
+		position: absolute;
+		display: block;
+		bottom: 280px;
+		left: 230px;
+		animation: rotation 5s linear infinite;
+	}
+
+	#site-navigation .ChatNoir {
+		position: absolute;
+		animation: float 5.5s ease-in-out infinite;
+		display: block;
+		bottom: 650px;
+		right: 225px;
+	}
+
+	#site-navigation .ChatOrange {
+		position: absolute;
+		animation: float 4s ease-in-out infinite;
+		display: block;
+		bottom: 540px;
+		left: 225px;
+	}
+
+	#site-navigation .ChatViolet {
+		position: absolute;
+		animation: float 5s ease-in-out infinite;
+		display: block;
+		bottom: 400px;
+		left: 225px;
+	}
+}
+
+/* Responsive Mobile */
+@media (max-width: 480px) {
+	.video-banner {
+		position: fixed;
+		top: 180px;
+		left: 0;
+		width: 100vw;
+		height: 400px;
+		object-fit: cover;
+		z-index: -1;
+	}
+
+	.logo-banner {
+		width: 250px;
+		margin-top: -10px;
+	}
+
+	.main-navigation ul {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		background: white;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		right: 0;
+		padding: 15px 0;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.main-navigation ul.active {
+		display: flex;
+	}
+
+	.main-navigation ul li a {
+		font-weight: 500;
+		font-size: 2rem;
+		text-align: center;
+		display: block;
+	}
+
+	.main-navigation ul li a:hover {
+		text-shadow: 1px 1px 4px #FF5C00;
+	}
+
+	.cloud1 {
+		left: 130%;
+		top: 10%;
+		height: 100px;
+		width: 200px;
+	}
+
+	.cloud2 {
+		left: 150%;
+		top: 28%;
+	}
+
+	.left h2 {
+		display: flex;
+	}
+
+	.nomination {
+		flex-direction: column;
+		align-items: center;
+		margin-top: -10px;
+	}
+
+	.orange-banner {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.orange-banner h3 {
+		font-size: 1.5rem;
+		padding-left: 40px;
+		line-height: 1;
+	}
+
+	.texte {
+		font-size: 20px;
+		text-align: start;
+		max-width: 95%;
+	}
+
+	.oscarnomination {
+		position: relative;
+		width: 60%;
+		margin-top: -1px;
+		margin-left: 230px;
+	}
+
+	/* Menu burger mobile */
+	#site-navigation .LogoBurger {
+		width: 250px;
+	}
+
+	#site-navigation .logo-desktop {
+		display: none;
+	}
+
+	#site-navigation .SunFlowerBurger {
+		position: absolute;
+		bottom: 420px;
+		right: 10px;
+		width: 120px;
+	}
+
+	#site-navigation .FleurBurger {
+		position: absolute;
+		bottom: 320px;
+		right: 5px;
+		width: 40px;
+	}
+
+	#site-navigation .OrchidBurger {
+		position: absolute;
+		bottom: 520px;
+		left: -20px;
+		width: 100px;
+	}
+
+	#site-navigation .HibiscusBurger {
+		position: absolute;
+		top: -100px;
+		right: -140px;
+		width: 350px;
+	}
+
+	#site-navigation .RandomFlowerBurger {
+		position: absolute;
+		bottom: 170px;
+		left: 50px;
+		width: 50px;
+	}
+
+	.ChatNoir {
+		position: absolute;
+		bottom: 350px;
+		right: 80px;
+		width: 75px;
+		animation: float 5.5s ease-in-out infinite;
+	}
+
+	.ChatOrange {
+		position: absolute;
+		bottom: 250px;
+		left: 20px;
+		width: 75px;
+		animation: float 4s ease-in-out infinite;
+	}
+
+	.ChatViolet {
+		position: absolute;
+		bottom: 280px;
+		left: 40px;
+		width: 75px;
+		animation: float 4.5s ease-in-out infinite;
 	}
 }
