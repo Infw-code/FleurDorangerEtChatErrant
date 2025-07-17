@@ -471,7 +471,7 @@ figcaption {
 	overflow: visible;
 }
 .swiper {
-	margin-left: 40px;
+	margin-left: 45px;
 }
 .cloud {
 	position: absolute;
@@ -1008,9 +1008,11 @@ figcaption {
 		font-size: 30px !important;
 		font-family: Quicksand;
 		margin-left: 270px;
-		margin-bottom: 90px;
+		margin-bottom: 60px;
 	}
-
+    li {
+		list-style: none;
+	}
 	#site-navigation .site-title {
 		display: none;
 	}
@@ -1195,10 +1197,12 @@ figcaption {
 	.titleBurger a {
 		font-size: 18px !important;
 		font-family: Quicksand;
-		margin-bottom: 20px;
+		margin-bottom: 1px;
 		margin-left: 50px;
 	}
-
+    li {
+		list-style: none;
+	}
 	#site-navigation .LogoBurger {
 		width: 250px;
 	}
