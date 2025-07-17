@@ -29,6 +29,7 @@
 
         <header id="masthead" class="site-header">
             <nav id="site-navigation" class="main-navigation">
+                <li class="titleBurger"><a href="/"> Fleurs d'oranger & chats errant </a></li>
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                     <span class="line"></span>
                     <span class="line"></span>

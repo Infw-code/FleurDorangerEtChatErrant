@@ -6,6 +6,11 @@ Template: foce
 Text Domain: foce-child
 */
 /* Make sure embeds and iframes fit their containers. */
+.no-scroll {
+	overflow: hidden;
+	height: 100%;
+}
+
 embed,
 iframe,
 object {
@@ -114,6 +119,7 @@ a:active {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+
 .menu-icon {
 	display: block;
 	width: 40px;
@@ -408,15 +414,6 @@ figcaption {
 	display: block;
 }
 
-.menu-toggle {
-	position: relative;
-}
-
-body.menu-open .menu-toggle {
-	position: fixed;
-	right: 20px;
-}
-
 .nomination {
 	display: flex;
 	align-items: flex-start;
@@ -588,6 +585,39 @@ body.menu-open .menu-toggle {
 }
 
 /* RESPONSIVE */
+@media (min-width: 1100px) {
+	.titleBurger {
+		display: none;
+	}
+
+	.menu-toggle {
+		position: absolute;
+		display: block !important;
+		margin-left: 1200px !important;
+		margin-top: 20px !important;
+		
+	}
+		.menu-toggle .line {
+		width: 30px;
+		height: 3px;
+		background: #000;
+		margin: 4px 0;
+		transition: all 0.3s ease;
+	}
+
+	.menu-toggle.active .line:nth-child(1) {
+		transform: rotate(45deg) translate(5px, 7px);
+	}
+
+	.menu-toggle.active .line:nth-child(2) {
+		opacity: 0;
+	}
+
+	.menu-toggle.active .line:nth-child(3) {
+		transform: rotate(-45deg) translate(5px, -7px);
+	}
+}
+
 @media all and (max-width: 1192px) {
 	h3 {
 		font-size: 2.5rem;
@@ -710,12 +740,8 @@ body.menu-open .menu-toggle {
 		background: transparent;
 		border: none;
 		cursor: pointer;
-
 		position: relative;
-		margin-left: auto;
-		margin-right: 20px;
 		z-index: 1000;
-
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -724,7 +750,6 @@ body.menu-open .menu-toggle {
 
 	.menu-toggle.active {
 		animation: fadeIn 5s ease forwards;
-		margin-right: 20px;
 	}
 
 	@keyframes fadeIn {
@@ -738,7 +763,6 @@ body.menu-open .menu-toggle {
 	}
 
 	.menu-toggle .line {
-		display: block;
 		width: 30px;
 		height: 3px;
 		background: #000;
@@ -856,10 +880,6 @@ body.menu-open .menu-toggle {
 		margin: 0;
 		padding-left: 0;
 	}
-
-	.main-navigation ul .site-title {
-		display: block;
-	}
 }
 
 .main-navigation ul {
@@ -967,9 +987,21 @@ body.menu-open .menu-toggle {
 	}
 
 	.story {
-	bottom: 100px;
+		bottom: 100px;
 	}
+
+	.menu-toggle {
+		margin-right: 40px !important;
+	}
+
 	/*menu Burger Tablette */
+	.titleBurger a {
+		font-size: 30px !important;
+		font-family: Quicksand;
+		margin-left: 270px;
+		margin-bottom: 90px;
+	}
+
 	#site-navigation .site-title {
 		display: none;
 	}
@@ -979,12 +1011,13 @@ body.menu-open .menu-toggle {
 	}
 
 	#site-navigation a {
-		font-size: 30px;
+		font-size: 64px;
 	}
 
 	#site-navigation .LogoBurger {
-		width: 300px;
-		margin-left: 350px;
+		width: 230px;
+		margin-top: 150px;
+		margin-left: 400px;
 		display: block;
 	}
 
@@ -996,9 +1029,9 @@ body.menu-open .menu-toggle {
 	#site-navigation .SunFlowerBurger {
 		position: absolute;
 		display: block;
-		width: 200px;
-		bottom: 580px;
-		right: 50px;
+		width: 216px;
+		bottom: 750px;
+		right: 70px;
 		animation: rotation 5s linear infinite;
 	}
 
@@ -1006,33 +1039,35 @@ body.menu-open .menu-toggle {
 		position: absolute;
 		display: block;
 		width: 70px;
-		bottom: 450px;
-		right: 50px;
+		bottom: 640px;
+		right: -30px;
 		animation: rotation 5s linear infinite;
 	}
 
 	#site-navigation .OrchidBurger {
 		position: absolute;
 		display: block;
-		width: 150px;
-		bottom: 750px;
-		left: 50px;
+		width: 172px;
+		bottom: 970px;
+		left: -30px;
 		animation: rotation 5s linear infinite;
 	}
 
 	#site-navigation .HibiscusBurger {
 		position: absolute;
 		display: block;
-		width: 600px;
-		bottom: -350px;
+		filter: blur(3px);
+		width: 626px;
+		bottom: -280px;
 		left: 700px
 	}
 
 	#site-navigation .RandomFlowerBurger {
 		position: absolute;
 		display: block;
-		bottom: 280px;
-		left: 230px;
+		width: 73px;
+		bottom: 330px;
+		left: 130px;
 		animation: rotation 5s linear infinite;
 	}
 
@@ -1040,24 +1075,27 @@ body.menu-open .menu-toggle {
 		position: absolute;
 		animation: float 5.5s ease-in-out infinite;
 		display: block;
-		bottom: 650px;
-		right: 225px;
+		width: 154px;
+		bottom: 680px;
+		right: 175px;
 	}
 
 	#site-navigation .ChatOrange {
 		position: absolute;
 		animation: float 4s ease-in-out infinite;
 		display: block;
+		width: 105px;
 		bottom: 540px;
-		left: 225px;
+		left: 100px;
 	}
 
 	#site-navigation .ChatViolet {
 		position: absolute;
 		animation: float 5s ease-in-out infinite;
 		display: block;
-		bottom: 400px;
-		left: 225px;
+		width: 110px;
+		bottom: 600px;
+		left: 175px;
 	}
 }
 
@@ -1152,7 +1190,18 @@ body.menu-open .menu-toggle {
 		margin-left: 230px;
 	}
 
+	.menu-toggle {
+		margin-right: 20px !important;
+	}
+
 	/* Menu burger mobile */
+	.titleBurger a {
+		font-size: 18px !important;
+		font-family: Quicksand;
+		margin-bottom: 20px;
+		margin-left: 50px;
+	}
+
 	#site-navigation .LogoBurger {
 		width: 250px;
 	}
