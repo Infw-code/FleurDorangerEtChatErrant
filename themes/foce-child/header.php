@@ -35,7 +35,7 @@
                     <span class="line"></span>
                     <span class="line"></span>
                 </button>
-                <ul>
+                <ul class="navmenu">
                     <li>
                         <img
                             class="logo-desktop"
