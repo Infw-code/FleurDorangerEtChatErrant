@@ -20,7 +20,7 @@ if (cloud1 && isVisible(cloud1)) {
 }
 
 if (cloud2 && isVisible(cloud2)) {
-  const moveCloud2 = Math.min(scrollY * 0.32, 1200); // vitesse 2×, distance max 2×
+  const moveCloud2 = Math.min(scrollY * 0.32, 1200);
   cloud2.style.transform = `translateX(-${moveCloud2}px)`;
 }
   });

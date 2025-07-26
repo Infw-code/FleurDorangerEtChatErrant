@@ -53,6 +53,7 @@ table {
   left: calc(50% - 323px);
   bottom: -28.5em;
   z-index: -1;
+  animation: rotation 5s linear infinite;
 }
 
 @keyframes rotation {
@@ -341,6 +342,11 @@ figcaption {
   display: block;
 }
 
+.studiokoukaki {
+  display: none;
+  visibility: hidden;
+}
+
 .nomination {
   display: flex;
   align-items: flex-start;
@@ -412,7 +418,7 @@ figcaption {
 }
 
 .cloud1 {
-  right: 5%;
+  right: 0;
   top: 10%;
   height: 100px;
   width: 300px;
@@ -425,6 +431,10 @@ figcaption {
   top: 35%;
   z-index: 2;
   filter: blur(10px);
+}
+
+.cloud1, .cloud2 {
+  transition: transform 0.2s ease-out;
 }
 
 .story #place h3 {
@@ -534,7 +544,7 @@ figcaption {
     display: none;
   }
   .navmenu {
-    margin-left: 350px !important;
+    margin-left: 450px !important;
   }
 }
 @media all and (max-width: 1192px) {
@@ -854,6 +864,14 @@ figcaption {
     z-index: 1000;
   }
   /*menu Burger Tablette */
+  .studiokoukaki {
+    display: inline-block;
+    position: absolute;
+    visibility: visible;
+    font-size: 30px !important;
+    left: 380px;
+    top: 250px;
+  }
   .navmenu {
     margin-top: 30px !important;
   }
@@ -1039,6 +1057,15 @@ figcaption {
     display: none;
   }
   /* Menu burger mobile */
+  .studiokoukaki {
+    display: inline-block;
+    position: absolute;
+    visibility: visible;
+    font-size: 20px !important;
+    left: 140px;
+    top: 250px;
+    z-index: 10;
+  }
   .titleBurger a {
     font-size: 18px !important;
     font-family: Quicksand;
@@ -1057,7 +1084,7 @@ figcaption {
   #site-navigation .SunFlowerBurger {
     position: absolute;
     bottom: 420px;
-    right: 10px;
+    right: -20px;
     width: 120px;
   }
   #site-navigation .FleurBurger {

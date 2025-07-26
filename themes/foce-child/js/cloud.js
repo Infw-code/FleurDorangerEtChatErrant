@@ -13,17 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
         rect.bottom > 0
       );
     };
+    /* J'ai reduit le code de la function pour que cloud.id recupere les 2 cloud ,
+     j'ai fait des test avec la vitesse et la position de depart pour que les nuage effectuer les 300px de translate */
 
- if (cloud1 && isVisible(cloud1)) {
-  const moveCloud1 = Math.min(scrollY * 0.2, 1600); // vitesse doublée, distance doublée
-  cloud1.style.transform = `translateX(-${moveCloud1}px)`;
-  console.log(`Cloud 1 visible: ${moveCloud1}px`);
+function moveCloud(cloud, basePosition, speed, maxMove) {
+  if (cloud && isVisible(cloud)) {
+    const move = Math.min(basePosition + scrollY * speed, maxMove);
+    cloud.style.transform = `translateX(-${move}px)`;
+    console.log(`${cloud.id} visible: ${move}px`);
+  }
 }
-
-if (cloud2 && isVisible(cloud2)) {
-  const moveCloud2 = Math.min(scrollY * 0.16, 600); // vitesse et distance doublées
-  cloud2.style.transform = `translateX(-${moveCloud2}px)`;
-  console.log(`Cloud 2 visible: ${moveCloud2}px`);
-}
+moveCloud(cloud1, -264, 0.37, 1600);
+moveCloud(cloud2, -400, 0.38, 600);
   });
 })

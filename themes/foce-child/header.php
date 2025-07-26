@@ -51,6 +51,7 @@
                     <li class="site-title"><a href="/">Fleurs d'oranger & chats errant</a></li>
                     <li><a href="#place">Lieu</a></li>
                     <li><a href="#studio">Studio Koukaki</a></li>
+                      <li><a class="studiokoukaki" href="#">STUDIO KOUKAKI</a></li>
                     <li><img class="ChatViolet" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ChatViolet.png" alt="chat violet" /></li>
                     <li><img class="menu-icon RandomFlowerBurger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/flower.png" alt="RandomFlower" /></li>
                     <li><img class="menu-icon SunFlowerBurger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Sunflower.png" alt="Fleur Soleil" /></li>

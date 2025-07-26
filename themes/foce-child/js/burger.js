@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
   function openMenu() {
     menuToggle.classList.add('active');
     mainNav.classList.add('toggled');
-    document.body.classList.add('no-scroll'); // 👉 bloque le scroll du body
+    document.body.classList.add('no-scroll'); 
     menuToggle.setAttribute('aria-expanded', 'true');
   }
 
   function closeMenu() {
     menuToggle.classList.remove('active');
     mainNav.classList.remove('toggled');
-    document.body.classList.remove('no-scroll'); // 👉 réactive le scroll
+    document.body.classList.remove('no-scroll'); 
     menuToggle.setAttribute('aria-expanded', 'false');
   }
 
