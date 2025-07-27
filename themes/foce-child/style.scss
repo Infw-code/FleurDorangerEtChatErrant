@@ -681,7 +681,7 @@ figcaption {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1030px) {
   .main-navigation {
     display: flex;
     justify-content: flex-end;
@@ -886,7 +886,6 @@ figcaption {
     height: 550px;
     object-fit: cover;
   }
-
   .menu-toggle {
     border: none;
     position: relative;
@@ -896,10 +895,9 @@ figcaption {
     height: 100%;
   }
   .main-navigation ul {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background: white;
     position: absolute;
     top: 60px;
     left: 0;
@@ -999,7 +997,6 @@ figcaption {
   margin-top: 0px;
   z-index: 1000;
 }
-
   /*menu Burger Tablette */
 .studiokoukaki{
   display: inline-block;
@@ -1120,7 +1117,6 @@ figcaption {
     }
   }
 }
-
 /* Responsive Mobile */
 @media (max-width: 480px) {
   .video-banner {

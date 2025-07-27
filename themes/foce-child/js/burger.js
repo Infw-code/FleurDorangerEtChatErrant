@@ -24,11 +24,4 @@ document.addEventListener('DOMContentLoaded', () => {
       openMenu();
     }
   });
-
-  // Ferme le menu quand on clique sur un lien
-  mainNav.addEventListener('click', (event) => {
-    if (event.target.tagName.toLowerCase() === 'a') {
-      closeMenu();
-    }
-  });
 });
